@@ -1,8 +1,10 @@
-const {send} = require('./request')
-const {read} = require('./response')
+const {send, read} = require('./internals')
+// const {send} = require('./internals/request')
+// const {read} = require('./internals/response')
+// const { REQUEST_TIMEOUT } = require('./internals/request')
 
 function makeRequest(url, data){
-    send(url, data);
+   send(url, data);
 
     return read();
 }
