@@ -10,7 +10,7 @@ function send(url, data){
 }
 
 
-export {
+module.exports = {
     REQUEST_TIMEOUT,
     send
 }
